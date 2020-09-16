@@ -21,9 +21,10 @@ export const login = (user) => {
 		})
 		.then((response) => {
 			localStorage.setItem('usertoken', response.data);
-			return response.data;
+      console.log(response)
+      return response.data;
 		})
 		.catch((err) => {
-			console.log(err);
+      console.log(`ERROR en user functions ${err}`);
 		});
 };

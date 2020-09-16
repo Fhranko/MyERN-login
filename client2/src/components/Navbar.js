@@ -37,15 +37,15 @@ class Landing extends Component {
           </Link>
         </li>
         <li className="nav-item">
-          <button onClick={this.logOut.bind(this)} className="nav-link">
+          <a href="" onClick={this.logOut.bind(this)} className="nav-link">
             Cerrar sesion
-          </button>
+          </a>
         </li>
       </ul>
     );
 
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded">
         <button
           className="navbar-toggler"
           type="button"
